@@ -4,17 +4,37 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Home } from './screens/Home';
-import { Animes } from './screens/Animes';
+import { Stadistics } from './screens/Stadistics';
+import { Comparison } from './screens/Comparison';
+import { Score } from './screens/Score';
+import { History } from './screens/History';
+import { Timer } from './screens/Timer';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: Home,
+    element: <Home/>,
   },
   {
-    path: "/list",
-    element: Animes,
+    path: "/comparison",
+    element: <Comparison/>,
   },
+  {
+    path: "/score",
+    element: <Score/>,
+  },
+  {
+    path: "/history",
+    element: <History/>,
+  },
+  {
+    path: "/stadistics",
+    element: <Stadistics/>,
+  },
+  {
+    path: "/timer",
+    element: <Timer/>,
+  }
 ]);
 
 function App() {
